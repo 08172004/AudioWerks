@@ -301,6 +301,7 @@ footer a:hover {
     height: 100%;
     width: 100%;
     z-index: 100;
+    display: none;
   }
   .imageContainer .popup-image span{
     position: absolute;
@@ -320,6 +321,12 @@ footer a:hover {
     width: 750px;
     object-fit: cover;
   }
+
+@media (max-width:768px) {
+  .imageContainer .popup-image img {
+    width: 95%;
+  }
+}
 
   /*-----------------------------------------gallery--------------------------*/
   .gallery-content{
