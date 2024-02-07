@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+    <link rel="stylesheet" href="contact page.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="#">AudioWerks<span>.</span></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="home page.html">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="feedback page.html">Feedback</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+
+<div class="slay">
+    <section class="owo">
+      <br/>
+        <a href="https://web.facebook.com/profile.php?id=100063594353182"><img src="../Project/images/logo.jpg" class="logo"></a>
+      <br/>
+    </section>
+    <section class="uwu">
+      <br/>
+      <div class="container">
+        <h1 class="form">Contact Us!</h1>
+        <form action="#">
+          <div class="userinfo">
+            <div class="inputbox">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Enter Full Name">
+            </div>
+            <div class="inputbox">
+              <label for="email">E-mail Address</label>
+              <input type="text" id="email" name="email" placeholder="Enter E-mail Address">
+            </div>
+            <div class="inputbox">
+              <label for="number">Contact Number</label>
+              <input type="text" id="number" name="number" placeholder="Enter Contact Number">
+            </div>
+            <div class="inputbox">
+              <label for="msg">Message</label>
+              <input type="text" id="msg" name="msg" placeholder="Enter Message">
+            </div>
+          </div>
+
+          <div class="submit">
+            <button>Submit</button>
+          </div>
+
+      </form>
+      </div>
+      <br/>
+    </section>
+</div>
+</body>
+
+  <footer>
+    <div>
+      <span>Copyright © 2023 All Rights Reserved</span>
+      <span class="link">
+          <a href="home page.html">Home</a>
+      </span>
+    </div>
+  </footer>
+</html>

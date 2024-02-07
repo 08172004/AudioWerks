@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Page</title>
+    <link rel="stylesheet" href="feedback page.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+  </head>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="#">AudioWerks<span>.</span></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="home page.html">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="feedback page.html">Feedback</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+
+<div class="slay">
+
+    <section class="review">
+      <div class="middle">
+        <h4 class="h4box">Feedback</h4>
+        <h3 class="h3box">Client Reviews About Our Services</h3>
+      </div>
+
+      <div class="revcontent">
+        <div class="box">
+          <p class="pbox">Very accomodating and responsive. Super helpful din. Tutulungan ka talaga every step of the way. Stress free mga mars.</p>
+          <div class="inner">
+            <div class="text">
+              <h5 class="h5box">Dazzle de Guzman</h5>
+              <h6 class="h6box">Wedding</h6>
+              <div class="rating">
+                <a href="#"><i class='bx bxs-star' style='color:#e8f70a'  ></i></a>
+                <a href="#"><i class='bx bxs-star' style='color:#e8f70a'  ></i></a>
+                <a href="#"><i class='bx bxs-star' style='color:#e8f70a'  ></i></a>
+                <a href="#"><i class='bx bxs-star' style='color:#e8f70a'  ></i></a>
+                <a href="#"><i class='bx bxs-star' style='color:#e8f70a'  ></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <p class="pbox">We had tons of fun in the wedding! Thank you to Maam Charisse for answering my queries and for being accommodating. The entire team was professional and I wasn't stressed on my wedding day.</p>
+          <div class="inner">
+            <div class="text">
+              <h5 class="h5box">Hannah Jara</h5>
+              <h6 class="h6box">Wedding</h6>
+              <div class="rating">
+                <a href="#"><i class='bx bxs-star' style='color:#e8f70a'  ></i></a>
+                <a href="#"><i class='bx bxs-star' style='color:#e8f70a'  ></i></a>
+                <a href="#"><i class='bx bxs-star' style='color:#e8f70a'  ></i></a>
+                <a href="#"><i class='bx bxs-star' style='color:#e8f70a'  ></i></a>
+                <a href="#"><i class='bx bxs-star' style='color:#e8f70a'  ></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="box">
+          <p class="pbox">Thanks Ms Charisse! Highly recommended! Sobrang daling kausap iaassist ka talaga sa lahat! See you on our wedding day po!</p>
+          <div class="inner">
+            <div class="text">
+              <h5 class="h5box">Karen Francisco-Ernacio</h5>
+              <h6 class="h6box">Wedding</h6>
+              <div class="rating">
+                <a href="#"><i class='bx bxs-star' style='color:#e8f70a'  ></i></a>
+                <a href="#"><i class='bx bxs-star' style='color:#e8f70a'  ></i></a>
+                <a href="#"><i class='bx bxs-star' style='color:#e8f70a'  ></i></a>
+                <a href="#"><i class='bx bxs-star' style='color:#e8f70a'  ></i></a>
+                <a href="#"><i class='bx bxs-star' style='color:#e8f70a'  ></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+</div>
+</body>
+
+  <footer>
+    <div>
+      <span>Copyright © 2023 All Rights Reserved</span>
+      <span class="link">
+          <a href="contact page.html">Contact Us</a>
+      </span>
+    </div>
+  </footer>
+</html>
