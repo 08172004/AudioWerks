@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Gallery</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/e48d166edc.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+    <script src="script.js" defer></script>
+  </head>
+  <!----------------navigation--------------->
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="#">AudioWerks<span>.</span></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="home page.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+  <!--------------------content----------------->
+    <div class="gallery-content">
+        <div class ></div>
+    </div>
+<div class="eventsbody">
+  <h1>Our Event Gallery</h1>
+      <div class="wrapper">
+        <i id="left" class="fa-solid fa-angle-left"></i>
+        <div class="carousel">
+          <img src="images/1 (1).jpg" alt="img" draggable="false">
+          <img src="images/2 (1).jpg" alt="img" draggable="false">
+          <img src="images/3 (2).jpg" alt="img" draggable="false">
+          <img src="images/4 (1).jpg" alt="img" draggable="false">
+          <img src="images/5 (2).jpg" alt="img" draggable="false">
+          <img src="images/6 (1).jpg" alt="img" draggable="false">
+          <img src="images/7 (1).jpg" alt="img" draggable="false">
+          <img src="images/8 (1).jpg" alt="img" draggable="false">
+          <img src="images/9 (1).jpg" alt="img" draggable="false">
+          <img src="images/10 (1).jpg" alt="img" draggable="false">
+          <img src="images/11 (1).jpg" alt="img" draggable="false">
+          <img src="images/12 (1).jpg" alt="img" draggable="false">
+          <img src="images/13 (1).jpg" alt="img" draggable="false">
+          <img src="images/14 (1).jpg" alt="img" draggable="false">
+          <img src="images/15 (1).jpg" alt="img" draggable="false">
+          <img src="images/16 (1).jpg" alt="img" draggable="false">
+          <img src="images/17 (1).jpg" alt="img" draggable="false">
+          <img src="images/18 (1).jpg" alt="img" draggable="false">
+          <img src="images/19 (1).jpg" alt="img" draggable="false">
+          <img src="images/20 (1).jpg" alt="img" draggable="false">
+        </div>
+        <i id="right" class="fa-solid fa-angle-right"></i>
+      </div>
+     </div> 
+  </body>
+  <!---------------------footer-------------------------->
+  <footer>
+    <div>
+      <span>Copyright © 2024 All Rights Reserved</span>
+      <span class="link">
+          <a href="#">Contact Us</a>
+      </span>
+    </div>
+  </footer>
+</html>
+      
+    

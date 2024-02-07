@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  </head>
+  <!----------------navigation--------------->
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="#">AudioWerks<span>.</span></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="home page.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+    <!----------------------------------content------------------------------>
+   <div class="servicecont">
+    <br>
+    <br>
+    <br>
+    <h1>Our Services</h1>
+    <br>
+    <div class="imageContainer">
+        <br>
+        <div class="image"><img src="images/lights.jpg" alt="Lights"></div>
+        <div class="image"><img src="images/sounds.jpg" alt="Sounds"></div>
+        <div class="image"><img src="images/ledwall.jpg" alt="Ledwall"></div>
+        <div class="image"><img src="images/stage.jpg" alt="Stage"></div>
+        <div class="image"><img src="images/moodlight.jpg" alt="Moodlight"></div>
+        <div class="image"><img src="images/lowlying.jpg" alt="Low Lying"></div>
+        <div class="image"><img src="images/stringlight.jpg" alt="String Lights"></div>
+        <div class="image"><img src="images/leddance.jpg" alt="Led Dance Floor"></div>
+    <div class="popop-image">
+        <span>&times;</span>
+        <img src="images/lights.jpg" alt="">
+    </div>
+   </div>
+   </div>
+  </body>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0">
+  </head>
+  <!----------------navigation--------------->
+  <body>
+    <header>
+      <nav class="navbar">
+        <a class="logo" href="#">AudioWerks<span>.</span></a>
+        <ul class="menu-links">
+          <span id="close-menu-btn" class="material-symbols-outlined">close</span>
+          <li><a href="home page.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Feedback</a></li>
+        </ul>
+        <span id="hamburger-btn" class="material-symbols-outlined">menu</span>
+      </nav>
+    </header>
+    <script>
+      const header = document.querySelector("header");
+      const hamburgerBtn = document.querySelector("#hamburger-btn");
+      const closeMenuBtn = document.querySelector("#close-menu-btn");
+
+      hamburgerBtn.addEventListener("click", () => header.classList.toggle("show-mobile-menu"));
+
+      closeMenuBtn.addEventListener("click", () => hamburgerBtn.click());
+    </script>
+    <!----------------------------------content------------------------------>
+    <div class="about">
+      <div class="aboutContent"></div>
+      <div class="allabout">
+      <h1>About Us</h1>
+      <br>
+      <div class="row">
+        <div class="col">
+        <h3>Audio Werks</h3>
+        <br>
+          <ul>Lights and Sounds</ul>
+        <ul>Led Wall</ul>
+        <ul>Stage</ul>
+        <ul>Moodlight</ul>
+        <ul>Sparkler</ul>
+        <ul>Low Lying</ul>
+        <ul>String Lights</ul>
+        <ul>Led Dance Floor</ul>
+        <ul>Confetti</ul>
+        </div>
+      <div class="col">
+      <h3>Mission</h3>
+      <br>
+      <p>To help clients transform their events into extraordinary memories. Our commitment is to enhance the emotional impact of every event, creating lasting memories throught our immersive creations. </p>
+    </div>
+    <div class="col">
+    <h3>Vision</h3>
+    <br>
+    <p>To be one of the leading provider of immersive lighting and sound experiences, setting the standard for event ambiance and audio excellence. Our vision is to create an atmosphere that captivates lasting memories.</p>
+  </div>
+  </div>
+  </div>
+        <div class="team">
+          <h1>Meet Our team</h1>
+          <br>
+        <img src="images/team.png" alt="team" class="center">
+        </div>
+        <div class="partners">
+          <br>
+          <br>
+          <h1>Our Partner</h1>
+          <br>
+          <br>
+          <a href="https://www.facebook.com/eventuallyyourssales07"><img src="images/eventually.jpg" alt="eventually" class="eventually"></a>
+          <br>
+          <br>
+        </div>
+    </div>
+    </div>
+  </body>
+  <!---------------------footer-------------------------->
+  <footer>
+    <div>
+      <span>Copyright © 2024 All Rights Reserved</span>
+      <span class="link">
+          <a href="#">Contact Us</a>
+      </span>
+    </div>
+  </footer>
+  </html>
