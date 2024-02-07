@@ -50,6 +50,27 @@ header .navbar {
   color: #31509f;
 }
 
+.navbar .menu-links .dropdown:hover .dropdown-menu {
+  display: block;
+  opacity: 1;
+  transform: scaleY(1);
+}
+
+.navbar .menu-links .dropdown-menu li {
+  padding: 10px 20px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar .menu-links .dropdown-menu li a {
+  color: white;
+  text-decoration: none;
+}
+
+.navbar .menu-links .dropdown-menu li a:hover {
+  color: #31509f;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 body{
     align-items: center;
     justify-content: center;
